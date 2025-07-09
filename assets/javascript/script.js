@@ -84,6 +84,7 @@ circular_imgClick[0].addEventListener("click", () => {
 });
 
 // Dark/ Light Mode Toggle
+
 function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
@@ -101,19 +102,33 @@ function myFunction() {
         localStorage.setItem("mode", "light");
     }
 }
+
 document.addEventListener("DOMContentLoaded", function () {
-    const storedMode = localStorage.getItem("mode");
-    if (storedMode === "dark") {
+    let storedMode = localStorage.getItem("mode");
+    var sunIcon = document.getElementById("sunIcon");
+    var moonIcon = document.getElementById("moonIcon");
+
+    // If no mode is stored, default to dark
+    if (!storedMode) {
         document.body.classList.add("dark-mode");
-        var sunIcon = document.getElementById("sunIcon");
-        var moonIcon = document.getElementById("moonIcon");
         sunIcon.classList.add("hidden");
         moonIcon.classList.remove("hidden");
+        localStorage.setItem("mode", "dark");
+    } else if (storedMode === "dark") {
+        document.body.classList.add("dark-mode");
+        sunIcon.classList.add("hidden");
+        moonIcon.classList.remove("hidden");
+    } else {
+        document.body.classList.remove("dark-mode");
+        moonIcon.classList.add("hidden");
+        sunIcon.classList.remove("hidden");
     }
 });
+
 // Dark/ Light Mode Toggle end
 
 // Portfolio Pop-up
+
 $(".pop-up").on("click", function () {
     $(".overlay").addClass("is-on");
 });
@@ -121,7 +136,9 @@ $(".pop-up").on("click", function () {
 $("#close").on("click", function () {
     $(".overlay").removeClass("is-on");
 });
+
 // Portfolio Pop-up end
+
 
 // Share Btn
 $(document).ready(function () {
