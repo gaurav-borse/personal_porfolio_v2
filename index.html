@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Gaurav Borse</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/profile/favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="stylesheet" href="./assets/css/swap.css">
+    <link rel="stylesheet" href="./assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media_query.css">
+</head>
+
+<body>
+    <!-- ====================================== Preloader ===================================== -->
+    <!-- <div class="wrapper">
+        <div id="loader-wrapper">
+            <div id="loader">
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">Loading</text>
+                </svg>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div> -->
+    <!-- ====================================== Preloader End ===================================== -->
+    <!-- ====================================== Background Animation ===================================== -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!-- ====================================== Background Animation End ===================================== -->
+    <!-- ====================================== Cursor ===================================== -->
+    <div class="cursor"></div>
+    <!-- ====================================== Cursor End ===================================== -->
+    <!-- ====================================== Dark Light Mode ===================================== -->
+    <div class="dark_toggle">
+        <div class="ul-header">
+            <a class="mode" onclick="myFunction()" title="Toggle Mode">
+                <div class="icon-container">
+                    <i id="sunIcon" class="fa-solid fa-sun fa-spin icon"></i>
+                    <i id="moonIcon" class="fa-solid fa-moon icon hidden"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ====================================== Dark Light Mode End===================================== -->
+    <header>
+        <!-- ====================================== Fix Icon Menu ===================================== -->
+        <div class="sidebar close">
+            <ul class="nav-links icetab-container" id="icetab-container">
+                <li class="icetab current-tab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="./assets/images/home_icon.svg" alt="home_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class=""><a class="link_name" href="javascript:void(0)">Home</a></li>
+                    </ul>
+                </li>
+                <li class="icetab menu-btn">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="./assets/images/about_icon.svg" alt="about_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">About Me</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="./assets/images/resume_icon.svg" alt="resume_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Resume</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="./assets/images/skills_icon.svg" alt="skills_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="./assets/images/portfolio_icon.svg" alt="portfolio_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Projects</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="./assets/images/services_icon.svg" alt="services_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Services</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="./assets/images/contact_icon.svg" alt="contact_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================== Fix Icon Menu End ===================================== -->
+        <!-- ======================================= Side Menu ================================== -->
+        <div class="toggle show-on-mobile" onclick="openNav()">
+            <img class="line-menu" src="./assets/images/line-menu.png" alt="line-menu">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()">&times;</div>
+            <img class="logo" src="./assets/images/logo.png" alt="logo">
+            <ul class="sidescreen_sub icetab-container" id="icetab-container2">
+                <li class="icetab current-tab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="./assets/images/home_icon.svg" alt="home_icon">Home
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="./assets/images/about_icon.svg"
+                            alt="about_icon">About Me
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="./assets/images/resume_icon.svg"
+                            alt="resume_icon">Resume
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="./assets/images/skills_icon.svg"
+                            alt="skills_icon">Skills
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="./assets/images/portfolio_icon.svg"
+                            alt="portfolio_icon">Projects
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="./assets/images/services_icon.svg"
+                            alt="services_icon.svg">Services
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="./assets/images/contact_icon.svg"
+                            alt="contact_icon">Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- ======================================= Side Menu End ================================== -->
+    </header>
+    <div class="all_page" id="page">
+        <section class="card_section" id="card_main">
+            <div class="olivia_bio" id="oliva_details">
+                <div class="imgBox">
+                    <img class="olivia-img" src="./assets/images/profile/me.jpg" alt="olivia-img">
+                </div>
+                <div class="bio_contain">
+                    <h1 class="olivia_moswa">Gaurav Borse</h1>
+                    <h2 class="designer font_w_font_s1 overflow-hidden"></h2>
+                    <button class="download_cv hire_me font_w_font_s">
+                        <i class="ri-at-line"></i> Contact Me
+                    </button>
+                </div>
+            </div>
+            <div class="right_card_main icetab-content" id="icetab-content">
+                <!-- ======================================= Home Section ================================== -->
+                <section class="oliva-intro tabcontent tab-active" id="home">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">intro</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Say Hi from Gaurav Borse, Web Designer & Developer</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">I’m an India-based full stack web developer who loves
+                        building things that work and look good. Whether it’s a sleek front-end or a solid back-end, I
+                        enjoy
+                        turning ideas into real, usable products.
+                    </h3>
+                    <div class="button_circle_group">
+                        <div>
+                            <a class="download_cv font_w_font_s special_btn"
+                                href="https://drive.google.com/file/d/1ijlnAHdcr7OEEbKej4Tw5o-cn2-b4GbI/view?usp=drive_link"
+                                target="_blank">
+                                <i class="ri-download-cloud-2-line"></i>Download CV
+                            </a>
+                        </div>
+                        <div class="circular_text_main ">
+                            <a href="javascript:void(0)" class="down_arrow_main position-relative">
+                                <img class="circular_text" src="./assets/images/circular_text.png" alt="circular_text">
+                                <img class="down_arrow" src="./assets/images/down_arrow.svg" alt="down_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= About Section ================================== -->
+                <section class="oliva-intro tabcontent" id="about">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">about me</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Crafting stories through Design and Innovation</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">I’m a freelance Full Stack Web Developer with 5+ years
+                        of experience helping clients build and manage dynamic websites. I specialize in creating custom
+                        dashboards and user-friendly web solutions using the latest front-end and back-end technologies.
+                        I
+                        enjoy working closely with clients from different industries, turning their ideas to life.</h3>
+                    <div class="about_counter fade_up">
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="5">5+</h3>
+                            <h3 class="experince font_w_font_s1 ">YEARS OF EXPERIENCE</h3>
+                        </div>
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="160">36+</h3>
+                            <h3 class="experince">PROJECTS COMPLETED</h3>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Resume Section ================================== -->
+                <section class="oliva-intro tabcontent" id="resume">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">Resume</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up education_space">Education</h2>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">Bachelor of Engineering in Information Technology</h3>
+                            <h4 class="university font_w_font_s1">Zeal College of Engineering and Research, Pune / 2021
+                                - 2024
+                            </h4>
+                            <!-- <h5 class="cursus font_w_font_s1"></h5> -->
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">Diploma - Computer Engineering</h3>
+                            <h4 class="university font_w_font_s1">Government Polytechnic, Nashik / 2017 - 2021</h4>
+                            <!-- <h5 class="cursus font_w_font_s1"></h5> -->
+                        </div>
+                    </div>
+                    <h2 class="moswa experience_main_text font_w_font_s fade_up education_space">Experience</h2>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Analyst Trainee</h3>
+                                    <h4 class="company font_w_font_s1">Deloitte USI / 2024 - Current</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">React Developer</h3>
+                                    <h4 class="company font_w_font_s1">Microdynamic Software Private Limited / 2024 - 2024</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Full Stack Web Development Intern</h3>
+                                    <h4 class="company font_w_font_s1">EvolvingX / 2023 - 2024</h4>
+                                </div>
+                            </div>
+                            <h5 class="cursus font_w_font_s1">
+                                <ul class="tab_left">
+                                    <li>I interned at EvolvingX, where I learned and implemented EvolvingX
+                                        methodologies.</li>
+                                    <li>I engaged in Design Thinking practices to solve complex problems and improve
+                                        user experiences.</li>
+                                    <li>I gained practical experience in System Design, contributing to the development
+                                        of efficient and scalable software solutions.</li>
+                                </ul>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Full Stack Web Development Intern</h3>
+                                    <h4 class="company font_w_font_s1">Shout In&Out / 2021 - 2023</h4>
+                                </div>
+                            </div>
+                            <h5 class="cursus font_w_font_s1">
+                                <ul class="tab_left">
+                                    <li>Successfully completed over 6 projects, demonstrating proficiency in HTML, CSS,
+                                        JS, Bootstrap, & PHP-CodeIgniter.</li>
+                                    <li>Contributed to both front-end and back-end development efforts, ensuring
+                                        responsive and user-friendly web applications.</li>
+                                    <li>Collaborated with cross-functional teams to gather requirements, design
+                                        solutions, and deliver high-quality software.</li>
+                                </ul>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Web Development Intern</h3>
+                                    <h4 class="company font_w_font_s1">Dream Designers / 2020 - 2021</h4>
+                                </div>
+                            </div>
+                            <h5 class="cursus font_w_font_s1">
+                                <ul class="tab_left">
+                                    <li>Gained hands-on experience in front-end and back-end development.</li>
+                                    <li>Worked on multiple projects, enhancing skills in HTML, CSS, Bootstrap,
+                                        JavaScript, and PHP.</li>
+                                    <li>Contributed to the development of websites with a focus on user experience and
+                                        performance.</li>
+                                </ul>
+                            </h5>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Skills Section ================================== -->
+                <section class="oliva-intro tabcontent" id="skill">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">my skills</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Skills that turn ideas into reality.</h2>
+                    <h3 class="passionate font_w_font_s1 ">From coding and design to marketing and collaboration, I use
+                        a diverse skill set to build digital solutions that work and stand out.
+                    </h3>
+                    <h3 class="lan_skill font_w_font_s fade_up">Languages: <span>Python, PHP, C, C++, DSA, OOPs</span>
+                    </h3>
+                    <div class="range" style="--p:78">
+                    </div>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Frontend Development: <span>React.js, HTML5,
+                            CSS3, Bootstrap 5, Tailwind CSS, JavaScript, jQuery, TypeScript</span></h3>
+                    <div class="range" style="--p:90">
+                    </div>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Backend Development: <span>Python—Django,
+                            PHP—Codeigniter, NodeJs</span></h3>
+                    <div class="range" style="--p:85">
+                    </div>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Database Management: <span>MySQL, PhpMyAdmin,
+                            MongoDB</span></h3>
+                    <div class="range" style="--p:80">
+                    </div>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">CICD Deployment: <span>TeamCity, Octopus,
+                            Azure</span></h3>
+                    <div class="range" style="--p:90">
+                    </div>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Web Hosting</h3>
+                    <div class="range" style="--p:99">
+                    </div>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Wordpress, Shopify</h3>
+                    <div class="range" style="--p:85">
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="portfolio">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">projects</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Ideas, built and brought to life.</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Here’s a look at some of the projects I’ve worked
+                        on—ranging from dynamic portfolios and e-commerce platforms to informative portals and startup
+                        tools. Each project reflects my focus on practical solutions, clean design, and real-world
+                        impact.
+                    </h3>
+                    <div class="content_main">
+                        <div class="content_main1">
+                            <div class="fade_up">
+                                <!-- <div class="content_portfolio pop-up"> -->
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/pilotportal.png"
+                                        alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Pilot Portal</h3>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Pilot Portal</h4>
+                                <p class="project_name_sub font_w_font_s1">Website | Product | Sponsored by the TATA
+                                    Group</p>
+                                <p class="content-subtext pt-2">A platform designed to provide aspiring entrepreneurs
+                                    with free guidance and resources to launch their startups.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio" id="youtube">
+                                    <a href="https://www.youtube.com/watch?v=mEHNrWqsb68">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="./assets/images/projects/maza-bappa.png"
+                                            alt="bank_app">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Get Bappa @Doorstep</h3>
+                                            <p class="content-text"></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Get Bappa @Doorstep</h4>
+                                <p class="project_name_sub font_w_font_s1">Dynamic Informative Website | Sponsored by
+                                    Nashik Municipal Corporation</p>
+                                <p class="content-subtext pt-2">Get Bappa @Doorstep is an e-commerce platform that
+                                    brings eco-friendly Shadu Mati Ganesh idols directly to customers during the festive
+                                    season. It streamlines the ordering process and supports local artisans.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/satvik.png" alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://satvikfresh.in/" target="_blank">
+                                            <h3 class="content-title">Satvik Fresh</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://satvikfresh.in/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Satvik Fresh</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | E-Commerce</p>
+                                <p class="content-subtext pt-2">Satvik Fresh is an e-commerce portal for natural oil
+                                    products, built to help a local business expand its reach. The site handles product
+                                    listings, orders, and customer management seamlessly.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/poshmark.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://poshmarkinteriors.com/" target="_blank">
+                                            <h3 class="content-title">Poshmark Interiors</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://poshmarkinteriors.com/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Poshmark Interiors</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Dynamic Portfolio</p>
+                                <p class="content-subtext pt-2">A dynamic portfolio for an interior and exterior design
+                                    agency, featuring project galleries and service details.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/malyan.png" alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://malynglobal.com/" target="_blank">
+                                            <h3 class="content-title">Malyn Global</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://malynglobal.com/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Malyn Global</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Portfolio</p>
+                                <p class="content-subtext pt-2">A portfolio website for an organic food import/export
+                                    business, showcasing products and company background.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/B10-Services.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://b10services.com/" target="_blank">
+                                            <h3 class="content-title">B10 Services</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://b10services.com/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">B10 Services</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Dynamic Portfolio</p>
+                                <p class="content-subtext pt-2">A dynamic portfolio for a creative service agency,
+                                    featuring their work, team, and service offerings.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/decParty.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://re-chord-consert-portfolio.vercel.app/" target="_blank">
+                                            <h3 class="content-title">RE:Chord - NYE 2022 Concert</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://re-chord-consert-portfolio.vercel.app/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">RE:Chord - NYE 2022 Concert</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Concert Portfolio</p>
+                                <p class="content-subtext pt-2">An event portfolio for the NYE 2022 Concert in Nagpur,
+                                    featuring event highlights and media.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/sahayata.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://sahayatafoundation.org.in/" target="_blank">
+                                            <h3 class="content-title">Sahayata Foundation</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://sahayatafoundation.org.in/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Sahayata Foundation</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Dynamic NGO Portfolio</p>
+                                <p class="content-subtext pt-2">A dynamic portfolio for an NGO, including donation and
+                                    payment gateway integration (Razorpay) to support fundraising.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/portfolio_v0.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://gauravborse.vercel.app/" target="_blank">
+                                            <h3 class="content-title">Portfolio v1</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://gauravborse.vercel.app/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Portfolio v1</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Portfolio</p>
+                                <p class="content-subtext pt-2">This is version 1 of my portfolio—a clean, honest look
+                                    at my work so far. Built from scratch, it’s a starting point that will grow as I do.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 2nd -->
+                        <div class="content_main2">
+                            <div class="fade_up">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/nashik-tourism.png"
+                                        alt="crypto_app_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://tourism.nmc.gov.in/" target="_blank">
+                                            <h3 class="content-title">Nashik Tourism</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://tourism.nmc.gov.in/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Nashik Tourism</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Dynamic Informative Website | Sponsored by
+                                    Nashik Municipal Corporation</p>
+                                <p class="content-subtext pt-2">Nashik Tourism is an informative web portal designed for
+                                    travelers exploring Nashik City. It provides up-to-date details on attractions,
+                                    events, and local experiences, making trip planning easy and engaging.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/Navami.png" alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Navami Sheetal</h3>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Navami Sheetal</h4>
+                                <p class="project_name_sub font_w_font_s1">Website | Dynamic Portfolio</p>
+                                <p class="content-subtext pt-2">Navami Sheetal is a dynamic portfolio and appointment
+                                    booking system for a professional astrologer. It features a secure payment gateway
+                                    (Razorpay) and an intuitive interface for clients to schedule consultations.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/easefolio.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Easefolio</h3>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Easefolio</h4>
+                                <p class="project_name_sub font_w_font_s1">Website | Product</p>
+                                <p class="content-subtext pt-2">A tool for generating professional portfolio websites in
+                                    just a few clicks. Designed to help users quickly showcase their work online with
+                                    minimal effort.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/sm-interiors.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://sminteriordesigns.in/" target="_blank">
+                                            <h3 class="content-title">SM Interiors</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://sminteriordesigns.in/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">SM Interiors</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Portfolio</p>
+                                <p class="content-subtext pt-2">A creative portfolio site for an interior solutions
+                                    provider, highlighting their design projects and services.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/dough.png" alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://doughadventures.com/" target="_blank">
+                                            <h3 class="content-title">Dough Adventure</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://doughadventures.com/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Dough Adventure</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Portfolio</p>
+                                <p class="content-subtext pt-2">A portfolio site for an innovative food processing
+                                    startup, presenting their story and product range.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/drshah.png" alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://drgautamshah.com/" target="_blank">
+                                            <h3 class="content-title">Dr Gautam Shah</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://drgautamshah.com/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Dr Gautam Shah</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Dynamic Portfolio</p>
+                                <p class="content-subtext pt-2">A professional portfolio for an orthopaedic surgeon and
+                                    professor, including work, services, and achievements.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/anaveey_new.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://anaveeyengg.com/" target="_blank">
+                                            <h3 class="content-title">Anaveey Engineering Pvt. Ltd.</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://anaveeyengg.com/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Anaveey Engineering Pvt. Ltd.</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Portfolio</p>
+                                <p class="content-subtext pt-2">Portfolio websites for an engineering product
+                                    manufacturer, updated for consecutive years to reflect new projects and
+                                    capabilities.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/surftechsystems.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://www.surftechsystems.com/" target="_blank">
+                                            <h3 class="content-title">Surftech Systems</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://www.surftechsystems.com/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Surftech Systems</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Portfolio</p>
+                                <p class="content-subtext pt-2">A portfolio for an industrial product manufacturer,
+                                    showcasing their products and expertise.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./assets/images/projects/lucky-studio.png"
+                                        alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <a href="https://luckyphotostudio.in/" target="_blank">
+                                            <h3 class="content-title">Lucky Photo Studio</h3>
+                                        </a>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <a href="https://luckyphotostudio.in/" target="_blank">
+                                    <h4 class="project_name font_w_font_s">Lucky Photo Studio</h4>
+                                </a>
+                                <p class="project_name_sub font_w_font_s1">Website | Portfolio</p>
+                                <p class="content-subtext pt-2">A photographer’s portfolio site, displaying creative
+                                    projects and photography services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section End  ================================== -->
+                <!-- ======================================= Services Section ================================== -->
+                <section class="oliva-intro tabcontent" id="services">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">my services</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Bringing ideas to life with code, design, and strategy.</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">I offer end-to-end solutions to help you launch, grow,
+                        and manage your online presence. Whether you need a new website, a fresh design, or better
+                        visibility online, I’ll work with you to create results that fit your goals.
+                    </h3>
+                    <div class="services_box_main">
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="./assets/images/web.png" alt="web">
+                            <h3 class="ui_ux font_w_font_s">Web Development</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Custom websites and web apps built for performance,
+                                security, and easy management.
+                            </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="./assets/images/ux.png" alt="ux">
+                            <h3 class="ui_ux font_w_font_s">Ui/Ux Design</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Intuitive, modern interfaces that make your site a
+                                pleasure to use.
+                            </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="./assets/images/marketing.png" alt="marketing">
+                            <h3 class="ui_ux font_w_font_s">SEO & Marketing</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Get found online and grow your audience with smart
+                                SEO and digital marketing.
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Contact us Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="contact">
+                    <div class="intro_main">
+                        <h2 class="intro fade_up">contact Me</h2>
+                    </div>
+                    <h2 class="moswa fade_up">Let's Work Together!</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Have a project in mind, a question, or just want to connect? I’m always open to new opportunities and conversations.
+                    </h3>
+                    <div class="container1">
+                        <div class="form form__1">
+                            <label for="name" class="form__label">What’s Your Name*</label>
+                            <input type="text" class="form__input" placeholder="" id="name" required autocomplete="off">
+                        </div>
+                        <div class="form form__2">
+                            <label for="email" class="form__label">Your Email*</label>
+                            <input type="email" class="form__input" placeholder="" id="email" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Your Phone Number*</label>
+                            <input type="text" class="form__input" placeholder="" id="phone" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Subject*</label>
+                            <input type="text" class="form__input" placeholder="" id="subject" required
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="btn_message">
+                        <div class="form form__3">
+                            <label for="name" class="form__label">Tell us about your project*</label>
+                            <input type="text" class="form__input message2" placeholder="" id="project" required>
+                        </div>
+                        <div class="send_message_form">
+                            <button class="download_cv form__btn">
+                                <i class="fa-regular fa-paper-plane material-icons"></i>Send Message
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="moswa touch">Get in touch!</h3>
+                        <div class="contact_number_main">
+                            <img src="./assets/images/contact.svg" alt="contact">
+                            <h4 class="contact_number"><a href="tel:918329007426">+91 83290 07426</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="./assets/images/gmail.svg" alt="gmail">
+                            <h4 class="contact_number"><a href="mailto:gborse108@gmail.com">gborse108@gmail.com</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="./assets/images/map.svg" alt="map">
+                            <h4 class="contact_number">
+                                <a href="javascript:void;">Mumbai, India - 400615</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15065.21607654691!2d72.9602646425396!3d19.26914091734204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bba21d0dfeb1%3A0x611536d2f004daae!2sKasarvadavali%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra%20400615!5e0!3m2!1sen!2sin!4v1752085659798!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <h5 class="copyright">© 2025 Gaurav Borse. Designed & developed by Gaurav Borse. All rights
+                        reserved.
+                    </h5>
+                </section>
+                <!-- ======================================= Contact us Section End ================================== -->
+            </div>
+        </section>
+        <!-- ======================================= Social Media Right Side  ================================== -->
+        <div class="social_media_main" id="social_media_main">
+            <ul class="social_media">
+                <li><a href="https://www.linkedin.com/in/gaurav-borse/" target="blank">LN</a></li>
+                <li><a href="https://github.com/gaurav-borse/" target="blank">GH</a></li>
+                <li><a href="https://www.instagram.com/gaurav.borse_" target="blank">IG</a></li>
+                <li><a href="https://www.facebook.com/Gaurav.Borsee" target="blank">FB</a></li>
+                <li><a href="https://dev.to/gauravborse" target="blank">DV</a></li>
+            </ul>
+        </div>
+        <!-- ======================================= Social Media Right Side End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window  ================================== -->
+        <div class="overlay">
+            <div class="content2">
+                <div id="close">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="./assets/images/portfolio_big_img.jpg" alt="portfolio_big_img">
+                <div class="corporate_main">
+                    <div class="corporate_sub">
+                        <h3 class="project_name corp font_w_font_s">Corporate Branding</h3>
+                        <p class="project_name_sub font_w_font_s1">CONTENT</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Created By:</p>
+                        <p class="cuberto">Cuberto</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Date:</p>
+                        <p class="cuberto">20/12/2024</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Client:</p>
+                        <p class="cuberto">Rayan Patrick</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Categories:</p>
+                        <p class="cuberto">Content</p>
+                    </div>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Ornare sagittis blandit imperdiet cursus risus. Amet proin cras mattis arcu pellentesque lorem
+                    sagittis. Mauris facilisis id est duis eget sed cras curabitur faucibus. Lectus eu eu quis amet.
+                    Ultrices morbi bibendum risus nisi sapien id ut egestas. Et fermentum fermentum faucibus sed quis in
+                    eget. Quis cursus eu in sit cras sit elementum nibh sit.
+                </p>
+                <div class="project_second">
+                    <div>
+                        <img class="project_sub_images" src="./assets/images/project_sub_images1.jpg"
+                            alt="project_sub_images1">
+                    </div>
+                    <div>
+                        <img class="project_sub_images" src="./assets/images/project_sub_images2.jpg"
+                            alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                </p>
+                <div class="pop-up-footer">
+                    <button class="download_cv view_project font_w_font_s"
+                        onClick="window.open('https://themeforest.net/item/personal-portfolio-cv-html-template-nairobi/48662175');">
+                        <i class="ri-eye-line"></i> View Project
+                    </button>
+                    <div class="share-button share">
+                        <i class="ri-share-line share-btn"></i>
+                        <div class="social top center networks-5 ">
+                            <a class="fbtn facebook" href="https://www.facebook.com" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a class="fbtn instagram" href="https://www.instagram.com" target="_blank">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a class="fbtn whatsapp" href="https://wa.me/+12345678899" target="_blank">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+                            <a class="fbtn linkedin" href="https://www.linkedin.com" target="_blank">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Blog PopUp Window  ================================== -->
+        <div class="modal-wrapper">
+            <div class="modal">
+                <div class="content3">
+                    <h3 class="logo_design">11 Best Logo Design Online & Offline Courses</h3>
+                    <h4 class="graphic font_w_font_s1">graphic design | December 18, 2023</h4>
+                    <div class="blog_pop_up_main">
+                        <img class="blog_pop_up " src="./assets/images/blog_pop_up.png" alt="blog_pop_up">
+                    </div>
+                    <h4 class="nunc font_w_font_s1">
+                        Mi fames nunc donec diam mi arcu. Vitae justo consequat blandit proin tellus feugiat dignissim.
+                        Nibh fames cursus amet tempor pharetra. Sit nulla aliquam adipiscing auctor non id adipiscing
+                        dictum non. Augue id eleifend facilisi ac egestas dui quis. Sit a viverra tristique volutpat
+                        amet odio. Molestie blandit et donec convallis rhoncus.
+                    </h4>
+                    <h4 class="nunc font_w_font_s1">Non tincidunt pulvinar nunc enim pulvinar purus pellentesque est
+                        felis. Et quam rhoncus egestas in sed at pellentesque faucibus. Diam sollicitudin non et
+                        placerat odio sed nunc. Faucibus tempor nunc eu volutpat auctor cursus quis. Scelerisque nisi
+                        turpis in lorem magna ultrices.
+                    </h4>
+                    <div class="blog-pop-up-list-main">
+                        <ul class="blog-pop-up-list">
+                            <li>Mi fames nunc donec diam mi arcu. Vitae justo consequat blandit proin tellus
+                                feugiat dignissim.</li>
+                            <li>Nibh fames cursus amet tempor pharetra.</li>
+                            <li>Sit nulla aliquam adipiscing auctor non id adipiscing dictum non.</li>
+                            <li>Augue id eleifend facilisi ac egestas dui quis. Sit a viverra tristique
+                                volutpat amet odio.</li>
+                            <li>Molestie blandit et donec convallis rhoncus.</li>
+                            <li>Non tincidunt pulvinar nunc enim pulvinar purus pellentesque est felis.</li>
+                            <li>Et quam rhoncus egestas in sed at pellentesque faucibus. Diam sollicitudin
+                                non et placerat odio sed nunc.</li>
+                        </ul>
+                    </div>
+                    <div class="small_blog ">
+                        <h5 class="integer font_w_font_s1">Vel augue ullamcorper integer risus cras aliquet nisl.
+                            Consequat ipsum dui orci adipiscing egestas molestie non. Et tristique ipsum gravida pretium
+                            massa curabitur ac auctor adipiscing. Sit odio tellus hendrerit suspendisse non.
+                        </h5>
+                        <div class="line_client">
+                            <div class="line"></div>
+                            <h5 class="jordon font_w_font_s">By Jordon Smith</h5>
+                        </div>
+                    </div>
+                    <h5 class="viverra font_w_font_s">Viverra habitasse nunc praesent enim bibendum. Lectus ornare in
+                        facilisis.</h5>
+                    <h5 class="integer vel font_w_font_s1">
+                        Vel augue ullamcorper integer risus cras aliquet nisl. Consequat ipsum dui orci adipiscing
+                        egestas molestie non. Et tristique ipsum gravida pretium massa curabitur ac auctor adipiscing.
+                        Sit odio tellus hendrerit suspendisse non. Phasellus aenean tellus in nisl fusce orci tristique
+                        augue eget. Commodo lacus volutpat libero mauris pulvinar id pellentesque est. Habitant
+                        habitasse nunc commodo odio lectus ipsum.
+                    </h5>
+                    <div class="blog_pop_up_slider">
+                        <div class="blog_img_main">
+                            <img class="blog_slider_img" src="./assets/images/blog_slider_img1.png"
+                                alt="blog_slider_img1">
+                        </div>
+                        <div class="blog_img_main">
+                            <img class="blog_slider_img" src="./assets/images/blog_slider_img2.png"
+                                alt="blog_slider_img2">
+                        </div>
+                        <div class="blog_img_main">
+                            <img class="blog_slider_img" src="./assets/images/blog_slider_img3.png"
+                                alt="blog_slider_img3">
+                        </div>
+                        <div class="blog_img_main">
+                            <img class="blog_slider_img" src="./assets/images/blog_slider_img4.png"
+                                alt="blog_slider_img4">
+                        </div>
+                    </div>
+                    <h5 class="integer eget font_w_font_s1">
+                        Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed viverra volutpat.
+                        Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus enim nisi
+                        proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id nec
+                        amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                    </h5>
+                    <div class="next_prev_share  position-relative">
+                        <div class="next_prev_arrow">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <h5 class="blog_next_prev font_w_font_s1">Prev</h5>
+                        </div>
+                        <div class="share-button share share2">
+                            <i class="ri-share-line share-btn share-btn2"></i>
+                            <div class="social top center networks-5 ">
+                                <a class="fbtn facebook" href="https://www.facebook.com" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a class="fbtn instagram" href="https://www.instagram.com" target="_blank">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a class="fbtn whatsapp" href="https://wa.me/+12345678899" target="_blank">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                                <a class="fbtn linkedin" href="https://www.linkedin.com" target="_blank">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="next_prev_arrow">
+                            <h5 class="blog_next_prev font_w_font_s1">Next</h5>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="page-wrapper trigger">
+                        <div class="circle-wrapper">
+                            <div class="warning circle_close"></div>
+                            <div class="close-btn font_w_font_s1">CLOSE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================= Portfolio gallery ================================== -->
+    <div id="popup1" class="overlay_gallery">
+        <div class="popup_gallery">
+            <h2 class="city_gallery">City 3D View Gallery</h2>
+            <a class="close" href="#">&times;</a>
+            <div id="cbwrap">
+                <div class="gallery">
+                    <img src="./assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="./assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="./assets/images/gallery_img3.png" alt="gallery_img3">
+                    <img src="./assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="./assets/images/gallery_img5.png" alt="gallery_img5">
+                    <img src="./assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="./assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="./assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="./assets/images/gallery_img5.png" alt="gallery_img5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/javascript/jquery.min.js"></script>
+    <script src="./assets/javascript/magnific-popup.min.js"></script>
+    <script src="./assets/javascript/progresscircle.js"></script>
+    <script src="./assets/javascript/cursor.js"></script>
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="./assets/javascript/slick.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+</body>
+
+</html>
