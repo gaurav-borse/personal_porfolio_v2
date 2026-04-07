@@ -34,7 +34,7 @@ setInterval(() => {
 var tabs = document.getElementById('icetab-container').children;
 var tabs2 = document.getElementById('icetab-container2').children;
 var tabcontents = document.getElementById('icetab-content').children;
- 
+
 var mybtn = function () {
     var tabchange = this.mynum;
     for (var int = 0; int < tabcontents.length; int++) {
@@ -234,6 +234,75 @@ $('input').focus(function () {
     })
 });
 // form end
+
+// EmailJS Contact Form
+(function () {
+    emailjs.init("2r6BbfTw3CD3uPinL"); // Replace with your EmailJS Public Key
+
+    var sendBtn = document.getElementById("contact_send_btn");
+    var statusMsg = document.getElementById("form_status_msg");
+
+    sendBtn.addEventListener("click", function () {
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+        var subject = document.getElementById("subject").value.trim();
+        var project = document.getElementById("project").value.trim();
+
+        // Validate required fields
+        if (!name || !email || !phone || !subject || !project) {
+            statusMsg.className = "form_status_msg error";
+            statusMsg.textContent = "Please fill in all the fields.";
+            return;
+        }
+
+        // Basic email validation
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            statusMsg.className = "form_status_msg error";
+            statusMsg.textContent = "Please enter a valid email address.";
+            return;
+        }
+
+        // Disable button while sending
+        sendBtn.disabled = true;
+        sendBtn.innerHTML = '<i class="fa-regular fa-paper-plane material-icons"></i>Sending...';
+
+        var templateParams = {
+            from_name: name,
+            from_email: email,
+            phone: phone,
+            subject: subject,
+            message: project
+        };
+
+        // Replace "YOUR_SERVICE_ID" and "YOUR_TEMPLATE_ID" with your EmailJS values
+        emailjs.send("service_yhlbccl", "template_3fmoos9", templateParams)
+            .then(function () {
+                statusMsg.className = "form_status_msg success";
+                statusMsg.textContent = "Message sent successfully! I'll get back to you soon.";
+                // Clear form
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("subject").value = "";
+                document.getElementById("project").value = "";
+                document.querySelectorAll("#contact .form").forEach(function (f) {
+                    f.classList.remove("active");
+                });
+            }, function (error) {
+                statusMsg.className = "form_status_msg error";
+                statusMsg.textContent = "Failed to send message. Please try again or email me directly.";
+            })
+            .finally(function () {
+                sendBtn.disabled = false;
+                sendBtn.innerHTML = '<i class="fa-regular fa-paper-plane material-icons"></i>Send Message';
+                setTimeout(function () {
+                    statusMsg.className = "form_status_msg";
+                }, 5000);
+            });
+    });
+})();
+// EmailJS Contact Form end
 
 // side Nav 
 function openNav() {

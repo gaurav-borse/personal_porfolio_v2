@@ -20,13 +20,13 @@
         height: 100%;
         width: 390px;
     }
+
     .imgBox {
         height: 100%;
         width: 390px;
     }
 
     .olivia-img {
-        border-radius: 40px 40px 40px 40px;
         max-width: 100%;
     }
 
@@ -47,21 +47,33 @@
     }
 
     .olivia_bio {
-        border-radius: 40px 40px 40px 40px;
-        margin-bottom: 30px;
+        flex-shrink: 0;
     }
 
     section#card_main {
         display: flex;
         align-items: center;
-        flex-direction: column;
         padding: 60px 0;
-        height: 100%;
-        margin: 0 90px 0 155px;
+        height: 100vh;
+        margin: 0 60px 0 130px;
     }
 
     .right_card_main {
-        border-radius: 40px 40px 40px 40px;
+        border-radius: 0px 40px 40px 0px;
+    }
+
+    .tabcontent {
+        padding: 40px;
+    }
+
+    .moswa {
+        font-size: 42px;
+        line-height: 56px;
+        padding: 15px 0;
+    }
+
+    .passionate {
+        padding-bottom: 30px;
     }
 
     #icetab-content {
@@ -84,6 +96,21 @@
         left: 40px;
         top: 0;
         transform: translate(0%, 30%);
+    }
+}
+
+@media(max-width:1200px) {
+    section#card_main {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .olivia_bio {
+        margin-bottom: 30px;
+    }
+
+    .right_card_main {
+        border-radius: 40px 40px 40px 40px;
     }
 }
 
@@ -735,6 +762,7 @@
         height: 100%;
         width: 300px;
     }
+
     .imgBox {
         height: 100%;
         width: 300px;

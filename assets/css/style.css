@@ -108,13 +108,13 @@ a {
 }
 
 .show-on-mobile {
-  display: none !important;
+    display: none !important;
 }
 
 @media (max-width: 1024px) {
-  .show-on-mobile {
-    display: flex !important;
-  }
+    .show-on-mobile {
+        display: flex !important;
+    }
 }
 
 :root {
@@ -2032,6 +2032,29 @@ button:hover .shopping_bag {
     height: 120px;
 }
 
+.form_status_msg {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: none;
+}
+
+.form_status_msg.success {
+    display: block;
+    background: rgba(85, 230, 165, 0.15);
+    border: 1px solid #55E6A5;
+    color: #55E6A5;
+}
+
+.form_status_msg.error {
+    display: block;
+    background: rgba(255, 76, 76, 0.15);
+    border: 1px solid #ff4c4c;
+    color: #ff4c4c;
+}
+
 .contact_number_main {
     display: flex;
     align-items: center;
@@ -2771,5 +2794,5 @@ ul {
 @media only screen and (max-width: 400px) {
     .gallery {
         grid-template-columns: repeat(1, minmax(0, 1fr));
-}
+    }
 }

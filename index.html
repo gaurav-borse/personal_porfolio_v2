@@ -5,18 +5,21 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDEPH7MYT3"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-EDEPH7MYT3');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EDEPH7MYT3');
     </script>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NB9VLSMZ');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NB9VLSMZ');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,8 +37,8 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB9VLSMZ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB9VLSMZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- ====================================== Preloader ===================================== -->
     <div class="wrapper">
@@ -195,7 +198,8 @@
                 <div class="bio_contain">
                     <h1 class="olivia_moswa">Gaurav Borse</h1>
                     <h2 class="designer font_w_font_s1 overflow-hidden"></h2>
-                    <button class="download_cv hire_me font_w_font_s">
+                    <button class="download_cv hire_me font_w_font_s"
+                        onclick="document.querySelectorAll('#icetab-container > li')[6].click()">
                         <i class="ri-at-line"></i> Contact Me
                     </button>
                 </div>
@@ -292,7 +296,7 @@
                         <div class="small_yellow_border_main fade_up">
                             <div class="envato_group_main">
                                 <div>
-                                    <h3 class="bachelor font_w_font_s1">Analyst Trainee</h3>
+                                    <h3 class="bachelor font_w_font_s1">Analyst - SDE</h3>
                                     <h4 class="company font_w_font_s1">Deloitte USI / 2024 - Current</h4>
                                 </div>
                             </div>
@@ -309,7 +313,8 @@
                             <div class="envato_group_main">
                                 <div>
                                     <h3 class="bachelor font_w_font_s1">React Developer</h3>
-                                    <h4 class="company font_w_font_s1">Microdynamic Software Private Limited / 2024 - 2024</h4>
+                                    <h4 class="company font_w_font_s1">Microdynamic Software Private Limited / 2024 -
+                                        2024</h4>
                                 </div>
                             </div>
 
@@ -820,7 +825,8 @@
                         <h2 class="intro fade_up">contact Me</h2>
                     </div>
                     <h2 class="moswa fade_up">Let's Work Together!</h2>
-                    <h3 class="passionate font_w_font_s1 fade_up">Have a project in mind, a question, or just want to connect? I’m always open to new opportunities and conversations.
+                    <h3 class="passionate font_w_font_s1 fade_up">Have a project in mind, a question, or just want to
+                        connect? I’m always open to new opportunities and conversations.
                     </h3>
                     <div class="container1">
                         <div class="form form__1">
@@ -849,9 +855,10 @@
                             <input type="text" class="form__input message2" placeholder="" id="project" required>
                         </div>
                         <div class="send_message_form">
-                            <button class="download_cv form__btn">
+                            <button class="download_cv form__btn" id="contact_send_btn">
                                 <i class="fa-regular fa-paper-plane material-icons"></i>Send Message
                             </button>
+                            <div id="form_status_msg" class="form_status_msg"></div>
                         </div>
                     </div>
                     <div>
@@ -888,7 +895,6 @@
                 <li><a href="https://www.linkedin.com/in/gaurav-borse/" target="blank">LN</a></li>
                 <li><a href="https://github.com/gaurav-borse/" target="blank">GH</a></li>
                 <li><a href="https://www.instagram.com/gaurav.borse_" target="blank">IG</a></li>
-                <li><a href="https://www.facebook.com/Gaurav.Borsee" target="blank">FB</a></li>
                 <li><a href="https://dev.to/gauravborse" target="blank">DV</a></li>
             </ul>
         </div>
@@ -1103,6 +1109,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="./assets/javascript/jquery.min.js"></script>
     <script src="./assets/javascript/magnific-popup.min.js"></script>
     <script src="./assets/javascript/progresscircle.js"></script>
